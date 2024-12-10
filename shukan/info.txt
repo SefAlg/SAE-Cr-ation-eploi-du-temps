@@ -1,0 +1,5 @@
+Specification-Title: Shukan pre-planner
+Specification-Version: 1.8
+Implementation-Title: shukan
+Implementation-Version: build3
+Main-Class: shukan.Shukan

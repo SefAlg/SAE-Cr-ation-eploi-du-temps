@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head><title>Even Shukan</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  </head>
+  <body bgcolor="#BEFEDE" text="#000000" style="font-family:verdana">
+    <h2>Pr&eacute;sentation de Shukan</h2>
+
+    <h3>--> Avertissement</h3>
+    <p> Attention, la base de donn&eacute;es (data) est actualis&eacute;e
+        automatiquement en quittant par la touche 'ESCAPE' ou la touche 'Q'.
+        Pour &eacute;viter la sauvegarde, utiliser la croix en haut &agrave;
+        droite de la fen&ecirc;tre. </p>
+    <p> Cette base de donn&eacute;es est fournie &agrave; titre d'exemple.
+        Toute ressemblance avec des situations existantes n'est pas le fruit
+        du hazard, mais elle ne saurait en aucun cas se substituer &agrave;
+        la version officielle des emplois du temps accessible sur ADE. </p>
+
+    <h3>--> La vue</h3>
+    <p> La zone d'&eacute;cran principale de Shukan comporte une grille
+        indiquant la progression des cours sur un semestre de formation. </p>
+    <p> La colonne de gauche donne le nom du semestre de formation, puis
+        pour chaque ligne, le nom abr&eacute;g&eacute; du cours. </p>
+    <p> Les colonnes suivantes correspondent &agrave; chaque semaine de
+        formation, dans le nom est donn&eacute; en haut, suivi des
+        activit&eacute;s pr&eacute;vues ordonn&eacute;es de gauche &agrave;
+        droite par ordre chronologique.
+        Par d&eacute;faut, les activit&eacute;s sont centr&eacute;es.
+        Il est possible de les d&eacute;caler vers le haut (<i>onLeft</i>)
+        ou vers le bas (<i>onRight</i>) pour rep&eacute;rer des enseignants
+        autres que le responsable du cours. </p>
+    <p> La ligne du bas indique la charge hebdomadaire (en heures) d'un
+        acteur du cours : un &eacute;tudiant (Etu) ou un enseignant (PEve).
+        Le deuxi&egrave;me chiffre est la charge maximale de la semaine. </p>
+    <p> Une case de la grille peut &ecirc;tre s&eacute;lectionn&eacute;e en
+        cliquant dessus avec le bouton gauche de la souris. Il est alors
+        possible de d&eacute;placer les activit&eacute;s pr&eacute;vues. </p>
+    <p> Une activit&eacute; peut aussi &ecirc;tre s&eacute;lectionn&eacute;e
+        en cliquant dessus avec le bouton droit de la souris, ou encore une
+        p&eacute;riode entre deux activit&eacute;s en pressant la touche
+        "SHIFT" lors du clic. Cela permet d'&eacute;changer les
+        activit&eacute;s situ&eacute;es aux extr&eacute;mit&eacute;s de
+        la p&eacute;riode. La progression du cours est alors modifi&eacute;e
+        en cons&eacute;quence. </p>
+    <p> Il est enfin possible de pr&eacute;senter une autre formation
+        (avec d'autres &eacute;tudiants), d'&eacute;diter la progression
+        hebdomadaire dans son &eacute;tat courant sous forme de fichiers
+        LaTeX plac&eacute;s dans un r&eacute;pertoire pr&eacute;fix&eacute;
+        "loads_", ou m&ecirc;me de sortir de Shukan. </p>
+
+    <h3>--> Le contr&ocirc;leur</h3>
+    <h4>Actions de la souris</h4>
+    <p> Bouton gauche : s&eacute;lectionner une case de la grille courante. </p>
+    <p> Bouton droit : s&eacute;lectionner une activit&eacute;. </p>
+    <p> Pour quitter <b><u>sans sauver</u></b>, clic sur la croix en haut
+        &agrave; droite. </p>
+    <h4>Actions du clavier</h4>
+    <p> 'q' ou ESC : enregistrer et fermer l'application. </p>
+    <p> Fl&egrave;che droite : passer &agrave; l'acteur suivant (pour
+        l'affichage de la charge hebdomadaire). </p>
+    <p> Fl&egrave;che gauche : passer &agrave; l'acteur pr&eacute;c&eacute;dent
+        (pour l'affichage de la charge hebdomadaire). </p>
+    <p> Fl&egrave;che basse : passer &agrave; la formation suivante. </p>
+    <p> Fl&egrave;che haute : passer &agrave; la formation
+        pr&eacute;c&eacute;dente. </p>
+    <p> 'l' : repousser la premi&egrave;re activit&eacute; dans la semaine
+        pr&eacute;c&eacute;dente et s&eacute;lectionner la semaine
+        pr&eacute;c&eacute;dente. </p>
+    <p> 'm' : repousser la derni&egrave;re activit&eacute; dans la semaine
+        suivante et s&eacute;lectionner la semaine suivante. </p>
+    <p> 'o' ou 'L' : repousser la premi&egrave;re activit&eacute; dans la
+        semaine pr&eacute;c&eacute;dente (la semaine courante reste
+        s&eacute;l&eacute;ctionn&eacute;e). </p>
+    <p> 'p' ou 'M' : repousser la derni&egrave;re activit&eacute; dans la
+        semaine suivante (la semaine courante reste
+        s&eacute;l&eacute;ctionn&eacute;e). </p>
+    <p> 'v' ou 'V' : permuter le titre des mati&egrave;res. </p>
+    <p> CTRL-X : &eacute;changer les activit&eacutes aux
+        extr&eacute;mit&eacute;s de la p&eacute;riode
+        s&eacute;lectionn&eacute;e. </p>
+    <p> CTRL-E : editer la progression hebdomadaire. </p>
+
+    <h3>-->Le mod&egrave;le</h3>
+    <h4>Base de donn&eacute;es</h4>
+    <p> La base de donn&eacute;es est stock&eacute;e dans le r&eacute;pertoire
+        principal <em>data</em>.
+        Chaque sous-r&eacute;pertoire correspond &agrave; un
+        semestre de formations, les premiers chiffres du nom indiquant
+        l'ann&eacute;e universitaire, et le dernier le num&eacute;ro de
+        semestre dans l'ann&eacute;e universitaire.
+        Le fichier <em>semestre.txt</em> contient les caract&eacute;ristiques
+        du semestre de formations &agrave; charger : l'ann&eacute;e
+        universitaire en premi&egrave;re ligne, le num&eacute;ro de semestre
+        en deuxi&egrave;me. </p>
+    <p> Un r&eacute;pertoire de semestre contient un sous-r&eacute;pertoire
+        de version, dont le nom est compos&eacute; du num&eacute;ro de version
+        suivi de la date (an-mois-jour) d'enregistrement.
+        Le fichier <em>version.txt</em> contient les caract&eacute;ristiques
+        de la version &agrave; charger : le num&eacute;ro de version en
+        premi&egrave;re ligne, la date d'enregistrement en deuxi&egrave;me. </p>
+    <p> Un r&eacute;pertoire de version contient un sous-r&eacute;pertoire
+        pour chaque formation du semestre, un fichier <em>cursus</em>
+        contenant le nom des formations &agrave; charger, et un fichier
+        <em>weeks.txt</em> fournissant les caract&eacute;ristiques du
+        semestre. </p>
+    <p> Un r&eacute;pertoire de formation contient un fichier de
+        caract&eacute;ristiques pour chaque cours de la formation,
+        et un fichier <em>module.txt</em> contenant le nom des cours
+        &agrave; charger. </p>
+
+    <h4>Mod&eacute;lisation du semestre calendaire</h4>
+    <p> Cr&eacute;er un r&eacute;pertoire <tt>V001_YYMMDD.txt</tt> avec
+        un fichier <tt>weeks.txt</tt>. </p>
+    <dl>
+    <dd> <tt>AnneeScolaire</tt> :
+         ann&eacute;e universitaire du semestre sous la forme 2324 pour
+         l'ann&eacute;e 2023/2024. </dd>
+    <dd> <tt>AnneeDeDepart</tt> :
+         ann&eacute;e de la premi&egrave;re semaine du semestre. </dd>
+    <dd> <tt>PremiereSemaine</tt> :
+         num&eacute;ro de la premi&egrave;re semaine du semestre. </dd>
+    <dd> <tt>LongueurDuSemestre</tt> :
+         nombre de semaines du semestre. </dd>
+    <dd> <tt>ChargeMaxHebdomadaire</tt> :
+         dur&eacute;e maximale de travail par semaine. </dd>
+    <dd> <tt>LongueurDeLaSemaine</tt> :
+         dur&eacute;e maximale de travail pour une semaine fix&ecute;e. </dd>
+    </dl>
+    <h4>Mod&eacute;lisation d'une formation</h4>
+    <p>Dans le r&eacute;pertoire de version, cr&eacute;er un
+       r&eacute;pertoire du nom de la formation, et ajouter ce nom
+       dans le fichier <em>cursus.txt</em>. </p>
+    <h4>Mod&eacute;lisation d'un module de cours</h4>
+    <p> Dans le r&eacute;pertoire de la formation, ajouter le nom du module
+        dans le fichier <em>modules.txt</em> et cr&eacute;er un fichier
+        du nom du module suffix&eacute; par "<em>.txt</em>". </p>
+    <p> Commencer par d&eacute;crire la progression du module, un type
+        d'activit&eacute; par ligne dans l'ordre chronologique pr&eacute;vu;
+        les types d'activit&eacute; reconnus sont :
+    <dl>
+    <dd> <tt>CM</tt> : Cours magistral de deux heures,
+    <dd> <tt>EV2</tt> : Evaluation de deux heures, </dd>
+    <dd> <tt>EV1</tt> : Evaluation d'une heure, </dd>
+    <dd> <tt>TD</tt> : TD de deux heures en salle de cours, </dd>
+    <dd> <tt>TM</tt> : TD de deux heures en salle machine, </dd>
+    <dd> <tt>TV</tt> : TD de deux heures en parall&egrave;le (m&ecirc;me
+         plage horaire pour tous les groupes), </dd>
+    <dd> <tt>SD</tt> : TD SA&eacute; de deux heures en salle de cours, </dd>
+    <dd> <tt>SM</tt> : TD SA&eacute; de deux heures en salle machine, </dd>
+    <dd> <tt>TP</tt> : TP de quatre heures en salle machine, </dd>
+    <dd> <tt>TP4</tt> : TP de quatre heures en salle machine, </dd>
+    <dd> <tt>TP2</tt> : TP de deux heures en salle machine, </dd>
+    <dd> <tt>TQ2</tt> : TP de deux heures en salle de cours, </dd>
+    <dd> <tt>SP</tt> : TP SA&eacute; de deux heures en salle machine, </dd>
+    <dd> <tt>SQ</tt> : TP SA&eacute; de deux heures en salle de cours. </dd>
+    </dl>
+    <p> Puis ajouter une ligne comportant le mot <tt>Params</tt>, et
+        indiquer les caract&eacute;ristiques du module, une par ligne :
+    <dl>
+    <dd> <tt>DebutModule</tt> :
+         semaine minimale de d&eacute;but du cours, </dd>
+    <dd> <tt>FinModule</tt> :
+         semaine maximale de fin du cours, </dd>
+    <dd> <tt>SemaineLibre</tt> :
+         num&eacute;ro d'une semaine sans activit&eacute; pour ce cours, </dd>
+    <dd> <tt>SousTitre</tt> :
+         initiales des enseignants ordonn&eacute;s en coh&eacute;rence avec
+         les d&eacute;calages dans les colonnes (lignes sur la vue), </dd>
+    <dd> <tt>Id</tt> :
+         identifiant du module dans la nomenclature nationale du BUT, </dd>
+    <dd> <tt>DechargeEtudiant</tt> :
+         indique que ces activit&eacute;s ne doivent pas &ecirc;tre
+         d&eacute;compt&eacute;es pour la charge hebdomadaire des
+         &eacute;tudiants, </dd>
+    <dd> <tt>AffectationCM</tt> :
+         acronyme de l'enseignant en charge des cours magistraux, </dd>
+    <dd> <tt>AffectationTD</tt> :
+         nombre de groupes de TD suivi de l'acronyme de l'enseignant en charge
+         de chaque groupe, </dd>
+    <dd> <tt>AffectationTP</tt> :
+         nombre de groupes de TP suivi de l'acronyme de l'enseignant en charge
+         de chaque groupe, </dd>
+    <dd> <tt>Affectation</tt> :
+         index de l'activit&eacute; (compt&eacute; &agrave; partir de 0),
+         suivi du nombre de groupes concern&eacute;s, puis de l'acronyme de
+         l'enseignant en charge de chaque groupe, </dd>
+    <dd> <tt>AGauche</tt> :
+         index de l'activit&eacute; devant appara&icirc;tre
+         d&eacute;cal&eacute;e vers la gauche (vers le haut sur la vue), </dd>
+    <dd> <tt>ADroite</tt> :
+         index de l'activit&eacute; devant appara&icirc;tre
+         d&eacute;cal&eacute;e vers la droite (vers le bas sur la vue). </dd>
+    </dl>
+  </body>
+</html>

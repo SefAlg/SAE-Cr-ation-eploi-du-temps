@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Specification-Title: Shukan pre-planner
+Specification-Version: 1.7
+Implementation-Title: shukan
+Implementation-Version: build14
+Main-Class: shukan.Shukan
+Created-By: 14.0.2 (Private Build)
+
